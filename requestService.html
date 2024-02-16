@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Request Services</title>
+    <link rel="stylesheet" href="StyleSheet.css" />
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="services.html"> Services </a></li>
+            <li><a href="contactUs.html"> Contact Us </a></li>
+        </ul>
+    </div>
+    <div class="header">
+        <!--Create heading, floating on top left corner-->
+        <h1 class="AZCarCharging"> Book Appointment </h1>
+    </div>
+    <div class="appForm">
+        <form>
+            <label for="fname">First Name:</label><br />
+            <input type="text" id="fname" name="fname" /><br />
+            <label for="lname">Last Name:</label><br />
+            <input type="text" id="lname" name="lname" /><br />
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" /><br />
+            <label for="pnumber">Phone #:</label><br />
+            <input type="tel" id="tel" name="tel" /><br />
+            <label for="date">Select Date and Time:</label><br />
+            <input type="datetime-local" id="datetime-local" name="date-timelocal" /><br />
+            <label for="services">Select estimated services: </label><br />
+            <input type="checkbox" id="serv1" name="serv1" value="serv1">
+            <label for="serv1">Level II or III station install</label><br />
+            <input type="checkbox" id="serv2" name="serv2" value="serv2">
+            <label for="serv2">Plugin charger installation</label><br />
+            <input type="checkbox" id="serv3" name="serv3" value="serv3">
+            <label for="serv3">Electric panel upgrade</label><br />
+            <input type="checkbox" id="serv4" name="serv4" value="serv4">
+            <label for="serv4">Relocate existing outlet</label><br />
+            <input type="checkbox" id="serv5" name="serv5" value="serv5">
+            <label for="serv5">Troubleshoot existing station</label><br />
+            <label for="addnotes">Additional Notes:</label><br />
+            <textarea id="addnotes" name="addnotes" rows="8" cols="70"></textarea><br />
+            <br />
+            <br />
+            <input type="submit" id="submit" value="Submit" />
+        </form>
+    </div>
+    <div class="instructions">
+        <h3>How it works:</h3>
+        <ol id="inst">
+            <li id="inst">Fill out the form and select a time for us to contact you. Select any of the 	
+                services you are interested in and add any additional details or questions 	for
+                us in Additional notes. 
+            </li>
+            <li id="inst">
+                After your information is submitted to us, we will contact you during your 	
+                selected date and time window to discuss your needs and how we can 	help you.
+            </li>
+            <li id="inst">
+                Over the phone we will schedule a time for one of our electricians to 	
+                come fulfill the agreed upon services.
+            </li>
+
+        </ol>
+
+    </div>
+
+</body>
+</html>
