@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="StyleSheet.css" />
 </head>
 <body>
+    <script src="js/Script.js"></script>
     <div class="navigation">
         <ul>
             <li><a href="index.html"> Home </a></li>
@@ -19,7 +20,7 @@
         <h1 class="AZCarCharging"> Book Appointment </h1>
     </div>
     <div class="appForm">
-        <form>
+        <form id="app-form">
             <label for="fname">First Name:</label><br />
             <input type="text" id="fname" name="fname" /><br />
             <label for="lname">Last Name:</label><br />
@@ -45,7 +46,18 @@
             <textarea id="addnotes" name="addnotes" rows="8" cols="70"></textarea><br />
             <br />
             <br />
-            <input type="submit" id="submit" value="Submit" />
+            <input type="submit" id="submit" value="Submit" onclick="
+                callAPI(document.getElementById('fname').value,
+                    document.getElementById('lname').value,
+                    document.getElementById('email').value,
+                    document.getElementById('tel').value,
+                    document.getElementById('datetime-local').value,
+                    document.getElementById('serv1').value,
+                    document.getElementById('serv2').value,
+                    document.getElementById('serv3').value,
+                    document.getElementById('serv4').value,
+                    document.getElementById('serv5').value,
+                    document.getElementById('addnotes').value)" />
         </form>
     </div>
     <div class="instructions">
