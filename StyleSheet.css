@@ -31,12 +31,25 @@ a {
     color:azure;
 } 
 .homepageText {
+    position: absolute;
+    /*
     margin-right: 1000px;
     margin-left: 30px;
+    */
+    right: 50%;
+    left: 5%;
+    top: 5%;
     margin-top: 75px;
     font-size: 24px;
+    border: 2px dashed #666;
+    border-radius: 5px;
+    
 }
 .buttons {
+    position: relative;
+    margin-top: 400px;
+    top: 80%;
+    bottom: 5%;
     margin-left: 200px;
     padding-top: 150px;
 }
@@ -75,12 +88,6 @@ a {
     transform: translateY(4px);
 }
 /*----------------------------------------Services Page---------------------------------------*/
-.header {
-    text-align: left;
-    /* background: #0a80f1; */
-    padding-top: 20px;
-    background-image: linear-gradient(steelblue,silver);
-}
 
 .header h2 {
     padding-left: 20px;
@@ -90,6 +97,7 @@ a {
     text-align: left;
     font-size: 24px;
     padding-left: 20px;
+    margin-left: 10px;
 }
 .servicesText p{
     font-weight: 600;
@@ -98,15 +106,25 @@ ul.services {
     color: black;
     list-style-type: disc;
     list-style-position: outside;
-    margin-top: 200px;
-    margin-right: 1300px;
-    margin-left: 120px;
+    /*margin-top: 200px;
+    margin-right: 50px;
+    margin-left: 120px;*/
+
 }
 ul.services li {
     display: list-item;
     list-style-type: disc;
     color: black;
     font-size: 24px;
+    padding: 3px;
+}
+.servicesList {
+    position: absolute;
+    left:5%;
+    top: 27%;
+    bottom: 40%;
+    right: 57%;
+
 }
 .buttons2 {
     margin-top: 550px;
