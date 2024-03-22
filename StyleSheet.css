@@ -45,7 +45,7 @@ a {
 }
 .buttons {
     position: relative;
-    margin-top: 400px;
+    margin-top: 475px;
     top: 80%;
     bottom: 5%;
     margin-left: 200px;
@@ -68,6 +68,7 @@ a {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
+
 .servBttn {
     padding: 20px;
     font-size: 20px;
@@ -119,14 +120,18 @@ ul.services li {
 .servicesList {
     position: absolute;
     left:5%;
-    top: 27%;
+    top: 26%;
     bottom: 40%;
     right: 57%;
 
 }
 .buttons2 {
-    margin-top: 550px;
+    position: relative;
+    margin-top: 500px;
+    top: 83%;
+    bottom: 5%;
     margin-left: 200px;
+    padding-top: 150px;
 }
 /*-----------------------------Request Services page----------------------------*/
 .appForm {
