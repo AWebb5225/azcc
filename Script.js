@@ -1,8 +1,8 @@
 //Load amplify conf file
 import { Amplify } from 'aws-amplify';
-import amplifyconfig from './amplifyconfiguration.json';
+import config from './amplifyconfiguration.js';
 
-Amplify.configure(amplifyconfig);
+Amplify.configure(config);
 
 
 /*--------Database connection------------------------------------*/
@@ -15,7 +15,7 @@ Amplify.configure(amplifyconfig);
 //});
 
 //API function to grab and push the data to dynamodb
-var callAPI = (fname, lname, email, tel, datetimelocal, serv1, serv2, serv3, serv4, serv5, addnotes) => {
+var callAPI = (fname, lname, email, tel, datetimelocal, serv1, serv2, serv3, serv4, serv5, addnotes) =>  {
     //create header object
     var myHeaders = new Headers();
     //add header type

@@ -34,9 +34,9 @@
             <label for="services">Select estimated services: </label><br />
             <input type="checkbox" id="serv1" name="serv1" value="serv1">
             <label for="serv1">Level II or III station install</label><br />
-            <input type="checkbox" id="serv2" name="serv2" value="serv2">
+            <input type="checkbox" id="serv2" name="serv2" value=add(255,001)>
             <label for="serv2">Plugin charger installation</label><br />
-            <input type="checkbox" id="serv3" name="serv3" value="serv3">
+            <input type="checkbox" id="serv3" name="serv3" value="2500">
             <label for="serv3">Electric panel upgrade</label><br />
             <input type="checkbox" id="serv4" name="serv4" value="serv4">
             <label for="serv4">Relocate existing outlet</label><br />
@@ -47,6 +47,7 @@
             <br />
             <br />
             <input type="submit" id="submit" value="Submit" onclick="
+                showAlert(),
                 callAPI(document.getElementById('fname').value,
                     document.getElementById('lname').value,
                     document.getElementById('email').value,
@@ -58,7 +59,22 @@
                     document.getElementById('serv4').value,
                     document.getElementById('serv5').value,
                     document.getElementById('addnotes').value)" />
+                    <input type="sefds", value="asdasd"/> </form>
         </form>
+        <script>
+            var totalsA = new Array();
+            totalsA['sec1'] = 0;
+ 
+            function add(sec,val) {
+                 totalsA[sec] += new Number(val);
+                 alert(totalsA[sec]);
+                    }
+            
+            function showAlert() {
+            var total = document.getElementById(serv2.valueAsNumber, serv3.valueAsNumber);
+            alert("Your request has been submitted to the technician! + Total " + total);
+            }            
+            </script>
     </div>
     <div class="instructions">
         <h3>How it works:</h3>
