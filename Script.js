@@ -1,9 +1,21 @@
 //Load amplify conf file
+/*
 import { Amplify } from 'aws-amplify';
 import config from './amplifyconfiguration.js';
 
 Amplify.configure(config);
-
+*/
+Amplify.configure({
+    API: {
+        REST: {
+            requestServiceAPItest: {
+                endpoint:
+                    'https://tvnxs4x0r0.execute-api.us-east-1.amazonaws.com/dev',
+                region: 'us-east-1' // Optional
+            }
+        }
+    }
+});
 
 /*--------Database connection------------------------------------*/
 
