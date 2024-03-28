@@ -25,8 +25,8 @@ var callAPI = (fname, lname, email, tel, datetimelocal, serv1, serv2, serv3, ser
         "fname": fname,
         "lname": lname,
         "email": email,
-        "tel": tel,
-        "datetimelocal": datetimelocal,
+        "pnumber": pnumber,
+        "date": date,
         "serv1": serv1,
         "serv2": serv2,
         "serv3": serv3,
@@ -42,7 +42,7 @@ var callAPI = (fname, lname, email, tel, datetimelocal, serv1, serv2, serv3, ser
         redirect: 'follow'
     };
     //Call to API using paramters
-    fetch("https://yrzgtvlfyvf2deo237j323zqyu.appsync-api.us-east-1.amazonaws.com/graphql", requestOptions)
+    fetch("https://tvnxs4x0r0.execute-api.us-east-1.amazonaws.com/dev", requestOptions)
         .then(response => response.text())
         .then(result => alert(JSON.parse(result).body))
         .catch(error => console.log('error', error));
