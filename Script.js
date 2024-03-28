@@ -1,10 +1,10 @@
 //Load amplify conf file
-/*
+
 import { Amplify } from 'aws-amplify';
 import config from './amplifyconfiguration.js';
 
 Amplify.configure(config);
-*/
+
 Amplify.configure({
     API: {
         REST: {
