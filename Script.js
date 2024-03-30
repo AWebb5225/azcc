@@ -54,7 +54,7 @@ var callAPI = (fname, lname, email, tel, datetimelocal, serv1, serv2, serv3, ser
         redirect: 'follow'
     };
     //Call to API using paramters
-    fetch("https://tvnxs4x0r0.execute-api.us-east-1.amazonaws.com/dev", requestOptions)
+    fetch("https://36ktc6fo3k.execute-api.us-east-1.amazonaws.com", requestOptions)
         .then(response => response.text())
         .then(result => alert(JSON.parse(result).body))
         .catch(error => console.log('error', error));
