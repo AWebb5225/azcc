@@ -109,7 +109,9 @@ img[id="indexlogo"] {
 
 h1[id="servicesHeading"] {
     padding-left: 20px;
-    font-size: 50px;
+    font-size: 60px;
+    font-stretch: wider;
+    font-weight: bolder;
  }
 .servicesText {
     text-align: left;
