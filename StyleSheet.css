@@ -87,10 +87,15 @@ a {
     transform: translateY(4px);
 }
 .logo {
-    position: relative;
-    margin-left: 2000px;
+    position: absolute;
+    left: 40%;
+    right: 5%
+
+    
+    
+    /*margin-left: 2000px;
     margin-right: 5px;
-    margin-top: 30px;
+    margin-top: 30px;*/
     
 }
 /*----------------------------------------Services Page---------------------------------------*/
