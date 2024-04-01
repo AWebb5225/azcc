@@ -107,9 +107,9 @@ img[id="indexlogo"] {
 }
 /*----------------------------------------Services Page---------------------------------------*/
 
-.header h2 {
+h1[id="servicesHeading"] {
     padding-left: 20px;
-    font-size: 40px;
+    font-size: 50px;
  }
 .servicesText {
     text-align: left;
