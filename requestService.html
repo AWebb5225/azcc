@@ -20,27 +20,27 @@
         <h1 class="AZCarCharging"> Book Appointment </h1>
     </div>
     <div class="appForm">
-        <form id="app-form">
+        <form id="app-form" method="POST" action="https://36ktc6fo3k.execute-api.us-east-1.amazonaws.com/dev/">
             <label for="fname">First Name:</label><br />
-            <input type="text" id="fname" name="fname" /><br />
+            <input type="text" id="fname" name="fname" required/><br />
             <label for="lname">Last Name:</label><br />
-            <input type="text" id="lname" name="lname" /><br />
+            <input type="text" id="lname" name="lname" required/><br />
             <label for="email">Email:</label><br />
-            <input type="email" id="email" name="email" /><br />
+            <input type="email" id="email" name="email" required/><br />
             <label for="pnumber">Phone #:</label><br />
-            <input type="tel" id="pnumber" name="pnumber" /><br />
+            <input type="tel" id="pnumber" name="pnumber" required/><br />
             <label for="date">Select Date and Time:</label><br />
-            <input type="datetime-local" id="date" name="date" /><br />
+            <input type="datetime-local" id="date" name="date" required/><br />
             <label>Select estimated services: </label><br />
-            <input type="checkbox" id="serv1" name="serv1" value="serv1">
+            <input type="checkbox" id="serv1" name="serv1" value="1">
             <label for="serv1">Level II or III station install</label><br />
-            <input type="checkbox" id="serv2" name="serv2" value=add(255,001)>
+            <input type="checkbox" id="serv2" name="serv2" value="2">
             <label for="serv2">Plugin charger installation</label><br />
-            <input type="checkbox" id="serv3" name="serv3" value="2500">
+            <input type="checkbox" id="serv3" name="serv3" value="3">
             <label for="serv3">Electric panel upgrade</label><br />
-            <input type="checkbox" id="serv4" name="serv4" value="serv4">
+            <input type="checkbox" id="serv4" name="serv4" value="4">
             <label for="serv4">Relocate existing outlet</label><br />
-            <input type="checkbox" id="serv5" name="serv5" value="serv5">
+            <input type="checkbox" id="serv5" name="serv5" value="5">
             <label for="serv5">Troubleshoot existing station</label><br />
             <label for="addnotes">Additional Notes:</label><br />
             <textarea id="addnotes" name="addnotes" rows="8" cols="70"></textarea><br />
