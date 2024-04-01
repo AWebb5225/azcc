@@ -19,7 +19,7 @@ Amplify.configure({
 */
 /*--------Database connection------------------------------------*/
 
-/*--------Pushing data to database from RequestServices page ------------ */
+/*--------Pushing data to database from RequestServices page ------------ 
 const appForm = document.getElementById("app-form");
 
 appForm.addEventListener("submit", (event) => {
@@ -45,7 +45,7 @@ appForm.addEventListener("submit", (event) => {
             console.error("Error:", error);
         });
 });
-
+*/
     /*
 //API function to grab and push the data to dynamodb
 var callAPI = (fname, lname, email, tel, datetimelocal, serv1, serv2, serv3, serv4, serv5, addnotes) =>  {
