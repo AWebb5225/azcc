@@ -44,6 +44,7 @@ appForm.addEventListener("submit", (event) => {
         .catch((error) => {
             console.error("Error:", error);
         });
+});
 
     /*
 //API function to grab and push the data to dynamodb
