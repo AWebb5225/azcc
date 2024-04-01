@@ -25,10 +25,10 @@ const appForm = document.getElementById("app-form");
 appForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    const formData = new FormData(form);
+    const formData = new FormData(appForm);
     const formObject = Object.formEntries(formData.entries());
 
-    const apiEndpoint = "https://36ktc6fo3k.execute-api.us-east-1.amazonaws.com";
+    const apiEndpoint = "https://36ktc6fo3k.execute-api.us-east-1.amazonaws.com/dev/";
 
     fetch(apiEndpoint, {
         method: "POST",
