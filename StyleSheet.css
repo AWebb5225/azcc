@@ -89,7 +89,9 @@ a {
 .logo {
     position: absolute;
     left: 40%;
-    right: 5%
+    right: 5%;
+    top: 20%;
+    bottom: 30%;
 
     
     
