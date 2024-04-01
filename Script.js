@@ -22,28 +22,27 @@ Amplify.configure({
 /*--------Pushing data to database from RequestServices page ------------ */
 const appForm = document.getElementById("app-form");
 
-appForm.addEventListener("submit", (event) => {
+appForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     const formData = new FormData(appForm);
     const formObject = Object.formEntries(formData.entries());
 
-    const apiEndpoint = "https://36ktc6fo3k.execute-api.us-east-1.amazonaws.com/dev/";
+    const apiEndpoint = await fetch("https://36ktc6fo3k.execute-api.us-east-1.amazonaws.com/dev/", {
 
-    fetch(apiEndpoint, {
-        method: "POST",
+        method: 'POST',
         headers: {
-            "Content-Type": "application/json",
+            'Content-Type': 'application/json'
         },
-        body: JSON.stringify(formObject),
-    })
-        .then((response) => response.json())
-        .then((data) => {
-            console.log("Success:", data);
-        })
-        .catch((error) => {
-            console.error("Error:", error);
-        });
+        body: JSON.stringify(jsonData)
+    });
+
+    // handle the response
+    if (!response.ok) {
+        throw new Error('Error!');
+    }
+
+    console.log(await response.json());
 });
 
     /*
