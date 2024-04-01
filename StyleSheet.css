@@ -107,7 +107,7 @@ img[id="indexlogo"] {
 }
 /*----------------------------------------Services Page---------------------------------------*/
 
-h1[id="servicesHeading"] {
+h1.servHeading {
     padding-left: 20px;
     font-size: 60px;
     font-stretch: wider;
