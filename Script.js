@@ -44,6 +44,7 @@ function submitForm() {
         }
     };
     xhr.send(jsonData);
+    document.getElementById("app-form").reset();
 }
     
 /*
