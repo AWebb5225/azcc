@@ -187,7 +187,7 @@ li[id="inst"] {
 }
 /* CSS for the styled button */
 .styled-button {
-    background-color: #4CAF50; /* Green */
+    background-color: #808080; /* light grey */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -202,12 +202,12 @@ li[id="inst"] {
 
     /* Hover effect */
 .styled-button:hover {
-background-color: #45a049; /* Darker green */
+background-color: #666; /* Darker grey */
 }
 
     /* Active effect */
 .styled-button:active {
-background-color: #3e8e41;
+background-color: silver;
 box-shadow: 0 5px #666;
 transform: translateY(4px);
 }
