@@ -32,32 +32,21 @@
             <label for="date">Select Date and Time:</label><br />
             <input type="datetime-local" id="date" name="date" required/><br />
             <label>Select estimated services: </label><br />
-            <input type="checkbox" id="serv1" name="serv1" >
+            <input type="checkbox" id="serv1" value="serv1" name="services" >
             <label for="serv1">Level II or III station install</label><br />
-            <input type="checkbox" id="serv2" name="serv2">
+            <input type="checkbox" id="serv2" valeu="serv2" name="services">
             <label for="serv2">Plugin charger installation</label><br />
-            <input type="checkbox" id="serv3" name="serv3">
+            <input type="checkbox" id="serv3" value="serv3" name="services">
             <label for="serv3">Electric panel upgrade</label><br />
-            <input type="checkbox" id="serv4" name="serv4">
+            <input type="checkbox" id="serv4" value="serv4" name="services">
             <label for="serv4">Relocate existing outlet</label><br />
-            <input type="checkbox" id="serv5" name="serv5">
+            <input type="checkbox" id="serv5" value="serv5" name="services">
             <label for="serv5">Troubleshoot existing station</label><br />
             <label for="addnotes">Additional Notes:</label><br />
             <textarea id="addnotes" name="addnotes" rows="8" cols="70"></textarea><br />
             <br />
             <br />
-            <button class="styled-button" type="submit" id="submit" value="submit" onclick="
-                showAlert()","callAPI(document.getElementById('fname').value,
-                    document.getElementById('lname').value,
-                    document.getElementById('email').value,
-                    document.getElementById('pnumber').value,
-                    document.getElementById('date').value,
-                    document.getElementById('serv1').value,
-                    document.getElementById('serv2').value,
-                    document.getElementById('serv3').value,
-                    document.getElementById('serv4').value,
-                    document.getElementById('serv5').value,
-                    document.getElementById('addnotes').value)"/>
+            <button class="styled-button" type="button" onclick="showAlert()","submitForm()"> Submit </button>
 
                    <!-- <input type="sefds", value="asdasd"/> -->
         </form>
