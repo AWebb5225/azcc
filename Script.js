@@ -20,6 +20,7 @@ Amplify.configure({
 /*--------Database connection------------------------------------*/
 
 /*--------Pushing data to database from RequestServices page ------------ */
+/*
 const appForm = document.getElementById("app-form");
 
 appForm.addEventListener("submit", async (event) => {
@@ -43,9 +44,9 @@ appForm.addEventListener("submit", async (event) => {
     }
 
     console.log(await response.json());
-});
+}); */
 
-    /*
+    
 //API function to grab and push the data to dynamodb
 var callAPI = (fname, lname, email, tel, datetimelocal, serv1, serv2, serv3, serv4, serv5, addnotes) =>  {
     //create header object
@@ -74,7 +75,7 @@ var callAPI = (fname, lname, email, tel, datetimelocal, serv1, serv2, serv3, ser
         redirect: 'follow'
     };
     //Call to API using paramters
-    fetch("https://36ktc6fo3k.execute-api.us-east-1.amazonaws.com", requestOptions)
+    fetch("https://36ktc6fo3k.execute-api.us-east-1.amazonaws.com/dev/", requestOptions)
         .then(response => response.text())
         .then(result => alert(JSON.parse(result).body))
         .catch(error => console.log('error', error));
@@ -91,4 +92,3 @@ var callAPI = (fname, lname, email, tel, datetimelocal, serv1, serv2, serv3, ser
                     document.getElementById('serv4').value,
                     document.getElementById('serv5').value,
                     document.getElementById('addnotes').value)
-*/
