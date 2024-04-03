@@ -185,6 +185,32 @@ li[id="inst"] {
     display: list-item;
     padding: 10px;
 }
+/* CSS for the styled button */
+.styled-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+    /* Hover effect */
+.styled-button:hover {
+background-color: #45a049; /* Darker green */
+}
+
+    /* Active effect */
+.styled-button:active {
+background-color: #3e8e41;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
 /*------------------------------Contact Us Page-----------------------------------*/
 .contactUsText{
     margin-left: 100px;

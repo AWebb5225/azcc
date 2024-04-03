@@ -48,7 +48,7 @@ appForm.addEventListener("submit", async (event) => {
 
     
 //API function to grab and push the data to dynamodb
-var callAPI = (fname, lname, email, tel, datetimelocal, serv1, serv2, serv3, serv4, serv5, addnotes) =>  {
+var callAPI = (fname, lname, email, pnumber, date, serv1, serv2, serv3, serv4, serv5, addnotes) =>  {
     //create header object
     var myHeaders = new Headers();
     //add header type
