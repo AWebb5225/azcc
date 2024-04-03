@@ -80,7 +80,7 @@ var callAPI = (fname, lname, email, tel, datetimelocal, serv1, serv2, serv3, ser
         .then(result => alert(JSON.parse(result).body))
         .catch(error => console.log('error', error));
 };
-,
+
                 callAPI(document.getElementById('fname').value,
                     document.getElementById('lname').value,
                     document.getElementById('email').value,
