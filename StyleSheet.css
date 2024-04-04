@@ -3,13 +3,13 @@
     margin:0px;
     padding: 0px;
     border: 0px;
-    background-color: slategray;
+    background-color: white;
 }
 .header {
     text-align: left;
     /* background: #0a80f1; */
     padding-top: 20px;
-    background-image: linear-gradient(steelblue,silver);
+    background-image: linear-gradient(rgb(174, 178, 221),silver);
 }
 .header h1 {
     padding-left: 10px;
@@ -88,7 +88,7 @@ a {
 }
 .logo {
     position: absolute;
-    left: 75%;
+    left: 65%;
     right: 5%;
     top: 20%;
     bottom: 30%;
