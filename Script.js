@@ -34,7 +34,7 @@ function submitForm() {
 
     // Send JSON data to AWS API Gateway endpoint
     const xhr = new XMLHttpRequest();
-    xhr.open('POST', 'https://36ktc6fo3k.execute-api.us-east-1.amazonaws.com/dev/', true);
+    xhr.open('POST', 'https://36ktc6fo3k.execute-api.us-east-1.amazonaws.com/dev/recordAppointmentTest', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.onload = function () {
         if (xhr.status === 200) {
