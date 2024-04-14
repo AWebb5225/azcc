@@ -47,18 +47,33 @@ function submitForm() {
     document.getElementById("app-form").reset();
 }
 /*--------Pulling data from the database to dashboard page ------------ */
-function pullForm() {
+function fetchDataAndDisp() {
+    //GET request for data from lambda
+    const xhr = new XMLHttpRequest();
     xhr.open('GET', 'https://36ktc6fo3k.execute-api.us-east-1.amazonaws.com/dev', true);
-    xhr.send('null');
     xhr.onload = function () {
         if (xhr.status === 200) {
-            var data = JSON.parse(xhr.responseText);
-            console.log(data);
-    } else {
-        console.log('Error:', xhr.responseText);
-    }
-};
-document.getElementById("dashboard-form").reset
+            const responseData = JSON.parse(xhr.responseText);
+            //Display on dashB
+            displayData(responseData);
+        } else {
+            console.log('Error fetching data:', xhr.responseText);
+        }
+    };
+    xhr.send();
+}
+
+function displayData(data) {
+    //display data in html with id dashboard
+    const dashboardElement = documet.getElementById('dashboard');
+    //clear previous data
+    dashboardElement.innerHTML = '';
+    //create HTML to display each entry
+    data.forEach(entry => {
+        const entryDiv = document.createElement('div');
+        entryDiv.textContent = JSON.stringify(entry);
+        dashboardElement.appendChild(entryDiv);
+    });
 }
 /*
 var callAPI = (fname, lname, email, pnumber, date, serv1, serv2, serv3, serv4, serv5, addnotes) =>  {
