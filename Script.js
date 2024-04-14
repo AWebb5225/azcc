@@ -65,7 +65,7 @@ function fetchDataAndDisp() {
 
 function displayData(data) {
     //display data in html with id dashboard
-    const dashboardElement = documet.getElementById('dashboard');
+    const dashboardElement = document.getElementById('dashboard');
     //clear previous data
     dashboardElement.innerHTML = '';
     //create HTML to display each entry
