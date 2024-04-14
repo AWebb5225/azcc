@@ -49,7 +49,7 @@ function submitForm() {
 /*--------Pulling data from the database to dashboard page ------------ */
 function pullForm() {
     xhr.open('GET', 'https://36ktc6fo3k.execute-api.us-east-1.amazonaws.com/dev', true);
-    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send('null');
     xhr.onload = function () {
         if (xhr.status === 200) {
             var data = JSON.parse(xhr.responseText);
