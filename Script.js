@@ -46,6 +46,7 @@ function submitForm() {
     xhr.send(jsonData);
     document.getElementById("app-form").reset();
 }
+
 /*--------Pulling data from the database to dashboard page ------------ */
 function fetchDataAndDisplay() {
     //GET request for data from lambda
@@ -75,6 +76,7 @@ function fetchDataAndDisplay() {
         });
     }
 }
+
 
 /*
 var callAPI = (fname, lname, email, pnumber, date, serv1, serv2, serv3, serv4, serv5, addnotes) =>  {

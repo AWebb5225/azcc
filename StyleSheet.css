@@ -218,3 +218,9 @@ transform: translateY(4px);
     padding: 10px;
     text-align: center;
 }
+/*------------------------------Dashboard-----------------------------------*/
+#app-table {
+    margin-left: 80%;
+    margin-right: 80%;
+    width: 50%; /* Adjust this value to your preference */
+}
