@@ -46,7 +46,20 @@ function submitForm() {
     xhr.send(jsonData);
     document.getElementById("app-form").reset();
 }
-    
+/*--------Pulling data from the database to dashboard page ------------ */
+function pullForm() {
+    xhr.open('GET', 'https://36ktc6fo3k.execute-api.us-east-1.amazonaws.com/dev', true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.onload = function () {
+        if (xhr.status === 200) {
+            var data = JSON.parse(xhr.responseText);
+            console.log(data);
+    } else {
+        console.log('Error:', xhr.responseText);
+    }
+};
+document.getElementById("dashboard-form").reset
+}
 /*
 var callAPI = (fname, lname, email, pnumber, date, serv1, serv2, serv3, serv4, serv5, addnotes) =>  {
     //create header object
