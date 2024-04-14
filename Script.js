@@ -47,34 +47,35 @@ function submitForm() {
     document.getElementById("app-form").reset();
 }
 /*--------Pulling data from the database to dashboard page ------------ */
-function fetchDataAndDisp() {
+function fetchDataAndDisplay() {
     //GET request for data from lambda
     const xhr = new XMLHttpRequest();
     xhr.open('GET', 'https://36ktc6fo3k.execute-api.us-east-1.amazonaws.com/dev', true);
     xhr.onload = function () {
         if (xhr.status === 200) {
             const responseData = JSON.parse(xhr.responseText);
-            //Display on dashB
+            // Display data on dashboard
             displayData(responseData);
         } else {
             console.log('Error fetching data:', xhr.responseText);
         }
     };
     xhr.send();
+    
+    function displayData(data) {
+        //display data in html with id dashboard
+        const dashboardElement = document.getElementById('dashboard');
+        //clear previous data
+        dashboardElement.innerHTML = '';
+        //create HTML to display each entry
+        data.forEach(entry => {
+            const entryDiv = document.createElement('div');
+            entryDiv.textContent = JSON.stringify(entry);
+            dashboardElement.appendChild(entryDiv);
+        });
+    }
 }
 
-function displayData(data) {
-    //display data in html with id dashboard
-    const dashboardElement = document.getElementById('dashboard');
-    //clear previous data
-    dashboardElement.innerHTML = '';
-    //create HTML to display each entry
-    data.forEach(entry => {
-        const entryDiv = document.createElement('div');
-        entryDiv.textContent = JSON.stringify(entry);
-        dashboardElement.appendChild(entryDiv);
-    });
-}
 /*
 var callAPI = (fname, lname, email, pnumber, date, serv1, serv2, serv3, serv4, serv5, addnotes) =>  {
     //create header object
