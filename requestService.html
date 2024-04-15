@@ -8,6 +8,28 @@
 </head>
 <body>
     <script src="Script.js"></script>
+    <script>
+        // Defining cost of each service
+        const serviceCosts = {
+            "serv1": 200, // level II or II station install
+            "serv2": 150, // plugin chargger installation
+            "serv3": 300, // electric panel upgrade
+            "serv4": 100, // relocate existing outlet
+            "serv5": 80   // troubleshoot existing station
+        };
+
+        // function to calc total cost
+        function calcTotalCost() {
+            let totalCost = 0;
+            // loop through checkboxes
+            document.querySelectorAll('input[type="checkbox"]:checked').forEach(function (checkbox) {
+                // add cost to total
+                totalCost += serviceCosts[checkbox.value];
+            });
+            //disp total cost
+            document.getElementById('totalCost').innerText = "$" + totalCost.toFixed(2);
+        }   
+    </script>
     <div class="navigation">
         <ul>
             <li><a href="index.html"> Home </a></li>
@@ -33,21 +55,26 @@
             <label for="date">Select Date and Time:</label><br />
             <input type="datetime-local" id="date" name="date" required/><br />
             <label>Select estimated services: </label><br />
-            <input type="checkbox" id="serv1" value="serv1" name="services" >
+            <input type="checkbox" id="serv1" value="serv1" name="services" onchange="calcTotalCost()">
             <label for="serv1">Level II or III station install</label><br />
-            <input type="checkbox" id="serv2" value="serv2" name="services">
+            <input type="checkbox" id="serv2" value="serv2" name="services" onchange="calcTotalCost()">
             <label for="serv2">Plugin charger installation</label><br />
-            <input type="checkbox" id="serv3" value="serv3" name="services">
+            <input type="checkbox" id="serv3" value="serv3" name="services" onchange="calcTotalCost()">
             <label for="serv3">Electric panel upgrade</label><br />
-            <input type="checkbox" id="serv4" value="serv4" name="services">
+            <input type="checkbox" id="serv4" value="serv4" name="services" onchange="calcTotalCost()">
             <label for="serv4">Relocate existing outlet</label><br />
-            <input type="checkbox" id="serv5" value="serv5" name="services">
+            <input type="checkbox" id="serv5" value="serv5" name="services" onchange="calcTotalCost()">
             <label for="serv5">Troubleshoot existing station</label><br />
             <label for="addnotes">Additional Notes:</label><br />
             <textarea id="addnotes" name="addnotes" rows="8" cols="70"></textarea><br />
             <br />
             <br />
             <button class="styled-button" type="button" onclick="submitForm()"> Submit </button>
+            <!-- additional element for disp the estimated cost -->
+            <div>
+                <label>Estimated Cost: </label>
+                <span id="totalCost">$0.00</span>
+            </div>
         </form>
         <!--</form>-->
     </div>
