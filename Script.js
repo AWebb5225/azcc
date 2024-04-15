@@ -31,6 +31,8 @@ function fetchDataAndDisplay() {
     //GET request for data from lambda
     const xhr = new XMLHttpRequest();
     xhr.open('GET', 'https://36ktc6fo3k.execute-api.us-east-1.amazonaws.com/dev', true);
+    xhr.setRequestHeader('Allow-Access-Origin', '*');
+    xhr.setRequestHeader('Access-Control-Allow-Methods', 'POST, GET, PUT')
     xhr.onload = function () {
         if (xhr.status === 200) {
             const responseData = JSON.parse(xhr.responseText);
