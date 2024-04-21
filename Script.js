@@ -31,7 +31,7 @@ const tableContainer = document.getElementById('tableContainer');
 const tableDiv = document.getElementById('table');
 
 showTableButton.addEventListener('click', async () => {
-    const response = await fetch('https://your-lambda-function-url', {
+    const response = await fetch('https://qrsg5z67fubex35w5u2inbk5oi0uvelu.lambda-url.us-east-1.on.aws', {
         method: 'GET',
         headers: {
             'Accept': 'text/html'
