@@ -25,8 +25,18 @@ function submitForm() {
     xhr.send(jsonData);
     document.getElementById("app-form").reset();
 }
+/*---------Retrieving data for the dashboard----------------------*/
+const loadTableButton = document.getElementById('loadTable');
+const tableContainer = document.getElementById('tableContainer');
 
-/*--------Pulling data from the database to dashboard page ------------ */
+loadTableButton.addEventListener('click', async () => {
+    const response = await fetch('https://qrsg5z67fubex35w5u2inbk5oi0uvelu.lambda-url.us-east-1.on.aws/');
+    const data = await response.text();
+
+    tableContainer.innerHTML = data;
+});
+
+/*--------Pulling data from the database to dashboard page ------------ 
 function fetchDataAndDisplay() {
     //GET request for data from lambda
     const xhr = new XMLHttpRequest();
@@ -55,4 +65,4 @@ function fetchDataAndDisplay() {
             dashboardElement.appendChild(entryDiv);
         });
     }
-}
+} */
