@@ -26,14 +26,16 @@ function submitForm() {
     document.getElementById("app-form").reset();
 }
 /*---------Retrieving data for the dashboard----------------------*/
-const loadTableButton = document.getElementById('loadTable');
+const showTableButton = document.getElementById('showTableButton');
 const tableContainer = document.getElementById('tableContainer');
+const tableDiv = document.getElementById('table');
 
-loadTableButton.addEventListener('click', async () => {
-    const response = await fetch('https://qrsg5z67fubex35w5u2inbk5oi0uvelu.lambda-url.us-east-1.on.aws/');
+showTableButton.addEventListener('click', async () => {
+    const response = await fetch('https://qrsg5z67fubex35w5u2inbk5oi0uvelu.lambda-url.us-east-1.on.aws');
     const data = await response.text();
-
-    tableContainer.innerHTML = data;
+    tableDiv.innerHTML = data;
+    tableContainer.style.display = 'block';
+});
 });
 
 /*--------Pulling data from the database to dashboard page ------------ 
