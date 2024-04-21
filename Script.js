@@ -31,12 +31,17 @@ const tableContainer = document.getElementById('tableContainer');
 const tableDiv = document.getElementById('table');
 
 showTableButton.addEventListener('click', async () => {
-    const response = await fetch('https://qrsg5z67fubex35w5u2inbk5oi0uvelu.lambda-url.us-east-1.on.aws');
+    const response = await fetch('https://your-lambda-function-url', {
+        method: 'GET',
+        headers: {
+            'Accept': 'text/html'
+        },
+        responseType: 'document'
+    });
     const data = await response.text();
     tableDiv.innerHTML = data;
     tableContainer.style.display = 'block';
 });
-
 
 /*--------Pulling data from the database to dashboard page ------------ 
 function fetchDataAndDisplay() {
