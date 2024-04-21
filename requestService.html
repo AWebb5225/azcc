@@ -11,11 +11,11 @@
     <script>
         // Defining cost of each service
         const serviceCosts = {
-            "level II or III station install": 200, // level II or III station install
-            "plugin charger installation": 150, // plugin charger installation
-            "electric panel upgrade": 300, // electric panel upgrade
-            "relocate existing outlet": 100, // relocate existing outlet
-            "troubleshoot existing station": 80   // troubleshoot existing station
+            "serv1": 200, // level II or III station install
+            "serv2": 150, // plugin charger installation
+            "serv3": 300, // electric panel upgrade
+            "serv4": 100, // relocate existing outlet
+            "serv5": 80   // troubleshoot existing station
         };
 
         // function to calc total cost
@@ -56,15 +56,15 @@
             <label for="date">Select Date and Time:</label><br />
             <input type="datetime-local" id="date" name="date" required/><br /><br />
             <label>Select estimated services: </label><br />
-            <input type="checkbox" id="serv1" value="level II or III station install" name="services" onchange="calcTotalCost()">
+            <input type="checkbox" id="level II or III station install" value="serv1" name="services" onchange="calcTotalCost()">
             <label for="serv1">Level II or III station install</label><br />
-            <input type="checkbox" id="serv2" value="plugin charger installation" name="services" onchange="calcTotalCost()">
+            <input type="checkbox" id="plugin charger installation" value="serv2" name="services" onchange="calcTotalCost()">
             <label for="serv2">Plugin charger installation</label><br />
-            <input type="checkbox" id="serv3" value="electric panel upgrade" name="services" onchange="calcTotalCost()">
+            <input type="checkbox" id="electric panel upgrade" value="serv3" name="services" onchange="calcTotalCost()">
             <label for="serv3">Electric panel upgrade</label><br />
-            <input type="checkbox" id="serv4" value="relocate existing outlet" name="services" onchange="calcTotalCost()">
+            <input type="checkbox" id="relocate existing outlet" value="serv4" name="services" onchange="calcTotalCost()">
             <label for="serv4">Relocate existing outlet</label><br />
-            <input type="checkbox" id="serv5" value="troubleshoot existing station" name="services" onchange="calcTotalCost()">
+            <input type="checkbox" id="troubleshoot existing station" value="serv5" name="services" onchange="calcTotalCost()">
             <label for="serv5">Troubleshoot existing station</label><br /><br />
             <label for="addnotes">Additional Notes:</label><br /><br />
             <textarea id="addnotes" name="addnotes" rows="8" cols="70"></textarea><br />
