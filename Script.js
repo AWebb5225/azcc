@@ -36,7 +36,7 @@ showTableButton.addEventListener('click', async () => {
     tableDiv.innerHTML = data;
     tableContainer.style.display = 'block';
 });
-});
+
 
 /*--------Pulling data from the database to dashboard page ------------ 
 function fetchDataAndDisplay() {
