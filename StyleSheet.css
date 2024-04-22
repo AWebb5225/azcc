@@ -227,9 +227,9 @@ transform: translateY(4px);
 .serviceKey {
     background-color: #f5f5f5;
     border-radius: 10px;
-    padding: 10px;
+    padding: 5px;
     margin: 20px auto;
-    max-width: 300px;
+    max-width: 250px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 /*
