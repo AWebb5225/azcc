@@ -233,7 +233,7 @@ transform: translateY(4px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 p[id="key"]{
-    font-size: 16px;
+    font-size: 14px;
 }
 /*
 h3 {
