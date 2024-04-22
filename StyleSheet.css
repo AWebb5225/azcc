@@ -228,9 +228,12 @@ transform: translateY(4px);
     background-color: #f5f5f5;
     border-radius: 10px;
     padding: 5px;
-    margin: 20px auto;
+    margin: 10px auto;
     max-width: 250px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+p[id="key"]{
+    font-size: 12px;
 }
 /*
 h3 {
