@@ -229,7 +229,7 @@ transform: translateY(4px);
     border-radius: 10px;
     padding: 5px;
     margin: 10px auto;
-    max-width: 200px;
+    max-width: 215px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 p[id="key"]{
